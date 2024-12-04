@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Documents\\github\\SpaceMath-Invaders\\SeriousGame\\SeriousGame.csproj": {}
+    "C:\\Users\\User\\source\\repos\\ImaSkrrtman\\ProjektJPWP\\SeriousGame\\SeriousGame.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Documents\\github\\SpaceMath-Invaders\\SeriousGame\\SeriousGame.csproj": {
+    "C:\\Users\\User\\source\\repos\\ImaSkrrtman\\ProjektJPWP\\SeriousGame\\SeriousGame.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Documents\\github\\SpaceMath-Invaders\\SeriousGame\\SeriousGame.csproj",
+        "projectUniqueName": "C:\\Users\\User\\source\\repos\\ImaSkrrtman\\ProjektJPWP\\SeriousGame\\SeriousGame.csproj",
         "projectName": "SeriousGame",
-        "projectPath": "C:\\Users\\User\\Documents\\github\\SpaceMath-Invaders\\SeriousGame\\SeriousGame.csproj",
+        "projectPath": "C:\\Users\\User\\source\\repos\\ImaSkrrtman\\ProjektJPWP\\SeriousGame\\SeriousGame.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Documents\\github\\SpaceMath-Invaders\\SeriousGame\\obj\\",
+        "outputPath": "C:\\Users\\User\\source\\repos\\ImaSkrrtman\\ProjektJPWP\\SeriousGame\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
