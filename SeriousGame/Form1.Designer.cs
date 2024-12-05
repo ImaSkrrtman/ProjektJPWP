@@ -30,8 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(1280, 1024); // Zmieniono rozmiar okna
+            this.Text = "Space Math Invaders"; // Tytuł okna
+            this.DoubleBuffered = true; // Zmniejszenie migotania w grze
         }
 
         #endregion
