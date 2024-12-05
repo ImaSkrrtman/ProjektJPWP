@@ -151,9 +151,18 @@ namespace SeriousGame
         {
             while (planets.Count < 5)
             {
+                int planetX = random.Next(0, this.ClientSize.Width);
+                int planetY = random.Next(0, this.ClientSize.Height);
+
+                // Sprawdzenie, czy planeta nie jest w linii statku kosmicznego
+                if (planetX >= playerX - 40 && planetX <= playerX + 120) // Zakres X statku
+                {
+                    continue; // Pomiñ tê pozycjê i wygeneruj now¹ planetê
+                }
+
                 var newPlanet = new Planet
                 {
-                    Position = new Point(random.Next(0, this.ClientSize.Width), random.Next(0, this.ClientSize.Height)),
+                    Position = new Point(planetX, planetY),
                     Size = random.Next(50, 100),
                     Color = Color.FromArgb(random.Next(100, 256), random.Next(100, 256), random.Next(100, 256))
                 };
@@ -162,16 +171,21 @@ namespace SeriousGame
                 bool overlaps = false;
                 foreach (var planet in planets)
                 {
-                    if (Math.Sqrt(Math.Pow(newPlanet.Position.X - planet.Position.X, 2) + Math.Pow(newPlanet.Position.Y - planet.Position.Y, 2)) < (newPlanet.Size + planet.Size) / 2)
+                    if (Math.Sqrt(Math.Pow(newPlanet.Position.X - planet.Position.X, 2) +
+                                  Math.Pow(newPlanet.Position.Y - planet.Position.Y, 2)) < (newPlanet.Size + planet.Size) / 2)
                     {
                         overlaps = true;
                         break;
                     }
                 }
 
-                if (!overlaps) planets.Add(newPlanet);
+                if (!overlaps)
+                {
+                    planets.Add(newPlanet);
+                }
             }
         }
+
 
         private void Form1_KeyDown(object? sender, KeyEventArgs e)
         {
