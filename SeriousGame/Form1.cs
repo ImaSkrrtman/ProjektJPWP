@@ -358,12 +358,12 @@ namespace SeriousGame
                 g.FillEllipse(new SolidBrush(planet.Color), planet.Position.X, planet.Position.Y, planet.Size, planet.Size);
             }
 
-            Image najezdzca = Image.FromFile("ship.png");
+            Image invader = Image.FromFile(Path.GetFullPath("..\\..\\..\\Resources\\ship.png")); 
 
             // Rysowanie statku kosmicznego (obraz zamiast trójk¹ta)
-            if (najezdzca != null) // Upewnij siê, ¿e obraz istnieje
+            if (invader != null) // Upewnij siê, ¿e obraz istnieje (inaczej nie uda³o mi sie tego zrobic)
             {
-                g.DrawImage(najezdzca, playerX, playerY, 80, 40); // Dopasuj wymiary do obrazu
+                g.DrawImage(invader, playerX, playerY, 80, 40); // Dopasuj wymiary do obrazu
             }
             
             // Rysowanie przeciwnika
